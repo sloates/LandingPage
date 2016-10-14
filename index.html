@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <a name="top"></a>
+    <title> My I-101 Landing Page </title>
+    <link rel="stylesheet" href="index.css">
+    <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  </head>
+
+  <body>
+    <div = "middle">
+      <h1 name = "top" class = "middle"> Sam Oates I-101 Home Page </h1>
+    </div>
+    <div>
+      <ul class="menu">
+    		<li class="menu">
+    			<a href="#"> I-101 index</a>
+    		</li>
+    		<li class="menu">
+    			<a href="https://www.flickr.com/photos/146567146@N07/">Flickr </a>
+    		</li>
+    		<li class="menu">
+    			<a href="https://www.vimeo.com">Vimeo</a>
+    		</li>
+    		<li class="menu">
+    			<a href="email.html">Contact Me</a>
+    		</li>
+  	  </ul>
+    </div>
+
+    <!--
+      <div class="middle labs">
+        <h2 class = "labs"> i-101 labs </h2>
+        <ul class="labs">
+          <li class="labs"><a href="w1lab2.html">Week 1 Lab 2</a></li>
+          <li class="labs"><a href="w2lab1.html">Week 2 Lab 1</a></li>
+          <li class="labs"><a href="w2lab2.html">Week 2 Lab 2</a></li>
+          <li class="labs"><a href="w3lab2.html">Week 3 Lab 2</a></li>
+          <li class="labs"><a href="w4lab1.html">Week 4 Lab 1</a></li>
+          <li class="labs"><a href="w4lab2.html">Week 4 Lab 2</a></li>
+          <li class="labs"><a href="w5lab2.html">Week 5 Lab 2</a></li>
+          <li class="labs"><a href="w6lab1.html">Week 6 Lab 1</a></li>
+        </ul>
+      </div>
+    -->
+
+    <div style="display:flex;justify-content:center;align-items:center;">
+      <div class="middle labs">
+        <h2 class="labs"> i-101 labs </h2>
+        <table class="labs">
+          <tr class="labs">
+            <td class="labs"><a href="w1lab2.html" class="labs">Week 1 Lab 2</a></td>
+            <td class="labs"><a href="w2lab1.html" class="labs">Week 2 Lab 1</a></td>
+            <td class="labs"><a href="w2lab2.html" class="labs">Week 2 Lab 2</a></td>
+            <td class="labs"><a href="w3lab2.html" class="labs">Week 3 Lab 2</a></td>
+          </tr>
+          <tr class="labs">
+            <td class="labs"><a href="w4lab1.html">Week 4 Lab 1</a></td>
+            <td class="labs"><a href="w4lab2.html">Week 4 Lab 2</a></td>
+            <td class="labs"><a href="w5lab2.html">Week 5 Lab 2</a></td>
+            <td class="labs"><a href="w6lab1.html">Week 6 Lab 1</a></td>
+          </tr>
+          <tr class="labs">
+            <td class="labs"><a href="w6lab2.html">Week 6 Lab 2</a></td>
+            <td class="labs"><a href="w7lab1.html">Week 7 Lab 1</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="middle pics">
+      <h2 class="pics">my pics</h2>
+      <button type="button" onclick="picSwap()"> Click to change up the photos </button>
+      <br>
+      <br>
+      <img src="images/BeckyLooking.jpg" width="48%" height="auto" alt="BeckyLooking" style="float:left;" id="pic1" onclick="picSwap()">
+      <img src="images/gary.jpg" width="48%" height="auto" alt="carexpo" style="float:right;" id="pic2" onclick="picSwap()">
+    </div>
+
+    <script>
+      function picSwap() {
+        var x1 = document.getElementById("pic1");
+        var x2 document.getElementById("pic2");
+        if (x1.src.match("BeckyLooking")) {
+          x1.src = "images/han.jpg";
+        } else {
+          x1.src = "images/BeckyLooking.jpg";
+        }
+
+        if (x2.src.match("gary")){
+          x2.src = "images/carPO.jpg";
+        } else {
+          x2.src = "images/gary.jpg";
+        }
+      }
+
+      function changeImage(){
+        var image = document.getElementById("pic1");
+        if(image.src.match("BeckyLooking")) {
+          image.src = "images/han.jpg";
+        } else {
+          image.src = "images/BeckyLooking";
+        }
+      }
+    </script>
+    <!--<br>-->
+
+    <div class="middle personal_info">
+      <h2 class="personal_info">personal info </h2>
+      <p> Well, howdy there. My name is Sam Oates, and I'm currently an Informatics major at Indiana University Bloomington.</p>
+      <h2 class="personal_info">intro</h2>
+      <p> Home page for info-i101</p>
+      <h2 class="personal_info">college bucket list</h2>
+      <p> The very top of my college bucket list is spending a weekend in Red River Gorge, climbing and canoeing. </p>
+    </div>
+
+    <div class="middle resources">
+      <h2 class="resources"> i101 resources</h2>
+      <ol class="resources">
+    		<li><a href="http://www.indiana.edu/~i101/">I 101 Course Page </a></li>
+    		<li><a href="http://www.w3schools.com/tags/default.asp">HTML Tag Reference</a></li>
+    		<li><a href="https://repl.it/">Easy Code Editor/Tester</a></li>
+      </ol>
+    </div>
+
+    <button type="button" onclick="changeImage">HIT ME</button>
+  </body>
+</html>
