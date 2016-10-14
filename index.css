@@ -1,0 +1,110 @@
+body {
+    background-color:#D5D5D5;
+}
+@font-face {
+  font-family: Abel;
+  src()
+}
+div.middle {
+  background-color: #6D7793;
+  margin:auto;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  font-family: Abel, sans-serif;
+  text-align: center;
+}
+ul.menu {
+	position: fixed;
+	list-style-type:none;
+	margin: auto;
+	padding: 0;
+	width: 250px;
+	background-color: #f1f1f1;
+  left: 50px;
+  top:50px;
+}
+li.menu a {
+	display: block;
+	color: #000;
+	padding: 5px 20px 5px;
+	text-decoration: none;
+  font-size: 150%;
+  font-family: Quicksand;
+}
+li.menu a:hover {
+	background-color: #555;
+	color: white;
+}
+div.labs {
+  height: 250%;
+}
+li.labs a{
+  color: #C5C9D3;
+  text-decoration: none;
+  float: left;
+  padding-left: 20px;
+  padding-top: 12px;
+}
+tr.labs td.labs a{
+  color: #C5C9D3;
+  text-decoration: none;
+  float: left;
+  padding-left: 20px;
+  padding-top: 12px;
+  font-size: 140%;
+  font-family: Quicksand;
+}
+li.labs a:hover{
+  color: #4D5A7C;
+}
+td.labs:hover{
+  color: #ffffff;
+}
+a.labs:hover{
+  color: #4D5A7C;
+}
+ul.labs {
+  background-color: #6D7793;
+  list-style-type: none;
+  font-family: Quicksand;
+}
+h2.labs {
+  font-family: Quicksand;
+  text-align: center;
+}
+h2.pics {
+  font-family: Quicksand;
+  text-align: center;
+}
+div.pics {
+  height: 350px;
+  background-color: #344165;
+}
+button.pics {
+  position: absolute;
+  top: 50%;
+}
+div.wrapper {
+  display:block;
+  margin: auto;
+}
+h2.personal_info {
+  font-family: Quicksand;
+}
+p {
+  font-family: Nova Mono;
+}
+h2.resources {
+  font-family: Quicksand;
+}
+ol.resources {
+  font-family: Quicksand;
+  font-style: bold;
+  type: a;
+}
+a:visited {
+  color:  #c194eb;
+}
